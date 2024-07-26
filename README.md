@@ -19,6 +19,10 @@ This project is a clone of the popular e-commerce website Flipkart. It has been 
 - Bootstrap 5
 - JavaScript
 
+## Live Demo
+
+Check out the live demo: [Flipkart Clone](https://the-sarthak-jain.github.io/Flipkart-Clone/)
+
 ## Getting Started
 
 ### Prerequisites
@@ -30,13 +34,13 @@ To run this project, you need a web browser and a text editor or IDE (e.g., VSCo
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/the-sarthak-jain/flipkart-clone.git
+git clone https://github.com/the-sarthak-jain/Flipkart-Clone.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd flipkart-clone
+cd Flipkart-Clone
 ```
 
 3. Open the `index.html` file in your web browser to view the project.
@@ -44,7 +48,7 @@ cd flipkart-clone
 ## File Structure
 
 ```
-flipkart-clone/
+Flipkart-Clone/
 ├── Images/
 │   ├── carousel-1.webp
 │   ├── carousel-2.webp
@@ -96,4 +100,4 @@ Contributions are welcome! If you find any issues or want to add new features, f
 
 ## Contact
 
-If you have any questions or suggestions, feel free to contact me at (Sarthak Jain)[mail.sarthakjain@gmail.com].
+If you have any questions or suggestions, feel free to contact me at [Sarthak Jain](mail.sarthakjain@gmail.com).
