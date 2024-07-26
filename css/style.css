@@ -38,7 +38,7 @@ body {
 }
 
 .small-card-banner {
-    background-image: URL(./Images/small-card-hero-img.png);
+    background-image: URL(../Images/small-card-hero-img.png);
     background-position: center;
     background-size: cover;
 }
