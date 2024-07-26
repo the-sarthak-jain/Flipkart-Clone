@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipKart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid bg-white">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light sticky-top  nav justify-content-evenly nav-justify">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- ---------------------- Logo ------------------------------ -->
+
+                    <a href="#" class="navbar-brand"><img src="Images/logo.svg" alt="logo"></a>
+
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="nav container justify-content-evenly nav-justify navbar-nav me-auto">
+
+                            <!-- ---------------------- Search Bar ------------------------------ -->
+
+                            <form class="d-flex w-50" role="search">
+                                <input class="form-control me-2" type="search"
+                                    placeholder="Search for Products, Brands and More" aria-label="Search">
+                                <!-- <button class="btn btn-outline-success" type="submit"></button> -->
+                            </form>
+
+                            <!------------------ First Item Drop-Down ---------------------------- -->
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link text-center" role="button" data-bs-toggle="dropdown"><i
+                                        class="fa-regular fa-circle-user me-2"></i>Sarthak<i
+                                        class="fa-solid fa-angle-down ms-2"></i></a>
+
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item"><i
+                                            class="fa-regular fa-circle-user me-3 mb-2"></i>My Profile</a>
+                                    <a href="#" class="dropdown-item"><i
+                                            class="fa-solid fa-coins me-3 mb-2"></i>SuperCoin Zone</a>
+                                    <a href="#" class="dropdown-item"><i class="fa-solid fa-plus me-3 mb-2"></i>FlipKart
+                                        Plus Zone</a>
+                                    <a href="#" class="dropdown-item"><i class="fa-solid fa-box me-3 mb-2"></i>SuperCoin
+                                        Zone</a>
+                                    <a href="#" class="dropdown-item"><i
+                                            class="fa-regular fa-heart me-3 mb-2"></i>Wishlist</a>
+                                    <a href="#" class="dropdown-item"><i
+                                            class="fa-solid fa-ticket me-3 mb-2"></i>Coupons</a>
+                                    <a href="#" class="dropdown-item"><i class="fa-solid fa-gift me-3 mb-2"></i>Gift
+                                        Cards</a>
+                                    <a href="#" class="dropdown-item"><i
+                                            class="fa-regular fa-bell me-3 mb-2"></i>Notifications</a>
+                                    <a href="#" class="dropdown-item"><i
+                                            class="fa-solid fa-arrow-right-from-bracket me-3 mb-2"></i>Logout</a>
+                                </div>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-center"><i
+                                        class="fa-solid fa-cart-shopping me-2"></i>Cart</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-center"><i class="fa-solid fa-shop me-2"></i>Become a
+                                    Seller</a>
+                            </li>
+
+                            <!------------------ Second Item Drop-Down ---------------------------- -->
+
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link text-center" role="button" data-bs-toggle="dropdown"><i
+                                        class="fa-solid fa-ellipsis-vertical"></i></a>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <a href="#" class="dropdown-item"><i
+                                            class="fa-regular fa-bell me-3 mb-2"></i>Notification Preferences</a>
+                                    <a href="#" class="dropdown-item"><i
+                                            class="fa-solid fa-headphones-simple me-3 mb-2"></i>24x7 Customer Care</a>
+                                    <a href="#" class="dropdown-item"><i
+                                            class="fa-solid fa-arrow-trend-up me-3 mb-2"></i>Advertise</a>
+                                    <a href="#" class="dropdown-item"><i
+                                            class="fa-solid fa-download me-3 mb-2"></i>Download</a>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="d-lg-none">
+                        <a href="#" class="nav-link"><i class="fa-regular fa-circle-user me-2 mb-2"></i>You</a>
+                    </div>
+                    <div class="d-lg-none">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-auto text-center mt-4 mb-2 mx-3 bottom-img-slider bg-white pt-3 pb-1">
+        <div class="row">
+            <div class="col"><img src="Images/grocery.webp" alt="grocery">
+                <div>Grocery</div>
+            </div>
+            <div class="col"><img src="Images/mobiles.webp" alt="mobiles">
+                <div>Mobiles</div>
+            </div>
+            <div class="col"><img src="Images/fashion.webp" alt="fashion">
+                <div><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Fashion</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Men's Top Wear</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="#" class="dropdown-item">All</a></li>
+                                <li><a href="#" class="dropdown-item">Men's T-Shirt</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Casual Shirts</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Formal Shirts</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Kurtas</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Ethnic Sets</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Blazers</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Raincoat</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Men's Bottom Wear</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="#" class="dropdown-item">All</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Jeans</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Trousers</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Trackpants</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Shorts</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Cargos</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Threefourths</a></li>
+                                <li><a href="#" class="dropdown-item">Men's Pyjamas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Women Ethnic</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="#" class="dropdown-item">All</a></li>
+                                <li><a href="#" class="dropdown-item">Women Saree</a></li>
+                                <li><a href="#" class="dropdown-item">Women Kurta & Kurtis</a></li>
+                                <li><a href="#" class="dropdown-item">Women Kurta Sets</a></li>
+                                <li><a href="#" class="dropdown-item">Women Ethnic Dress</a></li>
+                                <li><a href="#" class="dropdown-item">Women Dress Materials</a></li>
+                                <li><a href="#" class="dropdown-item">Women Gowns</a></li>
+                                <li><a href="#" class="dropdown-item">Women Lehenga Cholis</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Men Footwear</a></li>
+                        <li><a href="#" class="dropdown-item">Women Footwear</a></li>
+                        <li><a href="#" class="dropdown-item">Watches & Accessories</a></li>
+                        <li><a href="#" class="dropdown-item">Women's Western</a></li>
+                        <li><a href="#" class="dropdown-item">Bag's, Suitcases & Luggage</a></li>
+                        <li><a href="#" class="dropdown-item">Kids</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col"><img src="Images/electronics.webp" alt="electronics">
+                <div><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Electronics</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Audio</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="#" class="dropdown-item">All</a></li>
+                                <li><a href="#" class="dropdown-item">Bluetooth Headphones</a></li>
+                                <li><a href="#" class="dropdown-item">Wired Headphones</a></li>
+                                <li><a href="#" class="dropdown-item">True Wireless Earbuds</a></li>
+                                <li><a href="#" class="dropdown-item">Bluetooth Speakers</a></li>
+                                <li><a href="#" class="dropdown-item">Soundbars</a></li>
+                                <li><a href="#" class="dropdown-item">Home Theaters</a></li>
+                                <li><a href="#" class="dropdown-item">Remote Control</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Electronics GST Store</a></li>
+                        <li><a href="#" class="dropdown-item">Camera's & Accessories</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="#" class="dropdown-item">All</a></li>
+                                <li><a href="#" class="dropdown-item">DSLR</a></li>
+                                <li><a href="#" class="dropdown-item">Sports & Cameras</a></li>
+                                <li><a href="#" class="dropdown-item">Point & Shoots</a></li>
+                                <li><a href="#" class="dropdown-item">Instant Cameras</a></li>
+                                <li><a href="#" class="dropdown-item">Cam Corders</a></li>
+                                <li><a href="#" class="dropdown-item">Camera Tripods</a></li>
+                                <li><a href="#" class="dropdown-item">Camera Lenses</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Computer Peripherals</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="#" class="dropdown-item">All</a></li>
+                                <li><a href="#" class="dropdown-item">Printers</a></li>
+                                <li><a href="#" class="dropdown-item">Monitors</a></li>
+                                <li><a href="#" class="dropdown-item">Projectors</a></li>
+                                <li><a href="#" class="dropdown-item">Portable Projectors</a></li>
+                                <li><a href="#" class="dropdown-item">Ink Cartiges</a></li>
+                                <li><a href="#" class="dropdown-item">Ink Bottle</a></li>
+                                <li><a href="#" class="dropdown-item">Recipt Printers</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Gaming</a></li>
+                        <li><a href="#" class="dropdown-item">Health & Personal care</a></li>
+                        <li><a href="#" class="dropdown-item">Laptop Accessories</a></li>
+                        <li><a href="#" class="dropdown-item">Laptop & Desktop</a></li>
+                        <li><a href="#" class="dropdown-item">Mobile Accessories</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col"><img src="Images/furniture.webp" alt="furniture">
+                <div><a href="#" class="nav-link">Home & Furniture</a></div>
+            </div>
+            <div class="col"><img src="Images/appliances.webp" alt="appliances">
+                <div><a href="#" class="nav-link">Appliances</a></div>
+            </div>
+            <div class="col"><img src="Images/travel.webp" alt="travel">
+                <div><a href="#" class="nav-link">Travel</a></div>
+            </div>
+            <div class="col"><img src="Images/beauty-toys-more.webp" alt="beauty-toys-more">
+                <div><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Beauty, Toys & More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Beauty & Personal Care</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="#" class="dropdown-item">View All</a></li>
+                                <li><a href="#" class="dropdown-item">Bath & Oral Care</a></li>
+                                <li><a href="#" class="dropdown-item">Personal Hygiene</a></li>
+                                <li><a href="#" class="dropdown-item">Eye Makeup</a></li>
+                                <li><a href="#" class="dropdown-item">Face Makeup</a></li>
+                                <li><a href="#" class="dropdown-item">Lip Makeup</a></li>
+                                <li><a href="#" class="dropdown-item">Hair Care</a></li>
+                                <li><a href="#" class="dropdown-item">Bath Essentials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Men's Grooming</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="#" class="dropdown-item">View All</a></li>
+                                <li><a href="#" class="dropdown-item">Face Washes</a></li>
+                                <li><a href="#" class="dropdown-item">Beard Oils</a></li>
+                                <li><a href="#" class="dropdown-item">Hair Styling</a></li>
+                                <li><a href="#" class="dropdown-item">Shaving Essentials</a></li>
+                                <li><a href="#" class="dropdown-item">After Shave</a></li>
+                                <li><a href="#" class="dropdown-item">Face Creams & Face Packs</a></li>
+                                <li><a href="#" class="dropdown-item">Soaps & Bodywashes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Food & Drinks</a>
+                            <ul class="dropdown-menu submenu">
+                                <li><a href="#" class="dropdown-item">View All</a></li>
+                                <li><a href="#" class="dropdown-item">Nuts & Dry Fruits</a></li>
+                                <li><a href="#" class="dropdown-item">Cooking Essentials</a></li>
+                                <li><a href="#" class="dropdown-item">Breakfast Items</a></li>
+                                <li><a href="#" class="dropdown-item">Snacks Corner</a></li>
+                                <li><a href="#" class="dropdown-item">Jams spread & Honey</a></li>
+                                <li><a href="#" class="dropdown-item">Ready to Cook & Eat</a></li>
+                                <li><a href="#" class="dropdown-item">Chocolates</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Nutrition & Health Care</a></li>
+                        <li><a href="#" class="dropdown-item">Baby Care</a></li>
+                        <li><a href="#" class="dropdown-item">Toys & School Supplies</a></li>
+                        <li><a href="#" class="dropdown-item">Sports & Fitness</a></li>
+                        <li><a href="#" class="dropdown-item">Books</a></li>
+                        <li><a href="#" class="dropdown-item">Music</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col"><img src="Images/2-wheelers.webp" alt="2-wheelers">
+                <div><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Two Wheelers</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Petrol Vehicles</a></li>
+                        <li><a href="#" class="dropdown-item">Electric Vehicles</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------- Slider ------------------------------------ -->
+
+    <div class="container-fluid">
+        <div class="py-3 row">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+
+                    <ol class="carousel-indicators" style="list-style-type: none;">
+                        <li data-bs-target="#mycarousel" data-bs-slide-to="0"></li>
+                        <li data-bs-target="#mycarousel" data-bs-slide-to="1" class="active"></li>
+                        <li data-bs-target="#mycarousel" data-bs-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="Images/1.webp" class="d-block w-100" alt="...">
+                            <!-- <div class="carousel-caption">
+                                <p>First Slide</p>
+                            </div> -->
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="Images/2.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="Images/3.webp" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+
+                    <!-- ---------------------- Carousel Previous Icon ------------------------ -->
+
+                    <a href="#mycarousel" class="carousel-control-prev" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#mycarousel" class="carousel-control-next" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------- Multiple Items Image Carousel --------------- -->
+
+    <div class="container-fluid text-center my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel carousel1 slide carousel-img" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item carousel-item1 active">
+                        <div class="col col-md-6 col-lg-3">
+                            <div class="card mx-2">
+                                <div class="card-img p-3">
+                                    <img src="Images/projector.webp" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p>Projectors</p>
+                                </div>
+                                <!-- <div class="card-img-overlay">Slide 1</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item1">
+                        <div class="col col-md-6 col-lg-3">
+                            <div class="card mx-2">
+                                <div class="card-img p-3">
+                                    <img src="Images/beem-440-smart-led-projector-with-720p-hd-resolution-12-por-2106-original-imagwmg6agggh6qj.webp"
+                                        class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p>Projector</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item1">
+                        <div class="col col-md-6 col-lg-3">
+                            <div class="card mx-2">
+                                <div class="card-img p-3">
+                                    <img src="Images/top-mirror-camera.webp" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p>Top Mirrorless Cameras</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item1">
+                        <div class="col col-md-6 col-lg-3">
+                            <div class="card mx-2">
+                                <div class="card-img p-3">
+                                    <img src="Images/remote-control-toys.webp" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p>Remote Control Toys</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item1">
+                        <div class="col col-md-6 col-lg-3">
+                            <div class="card mx-2">
+                                <div class="card-img p-3">
+                                    <img src="Images/monitors.webp" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p>Monitors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item1">
+                        <div class="col col-md-6 col-lg-3">
+                            <div class="card mx-2">
+                                <div class="card-img p-3">
+                                    <img src="Images/elec-cycles.webp" class="img-fluid">
+                                </div>
+                                <div class="card-text">
+                                    <p>Electric Cycles</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------- Vertical Items Cards --------------- -->
+
+    <div class="container-fluid vertical-cards">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 py-2"><img src="Images/ver-card-1.webp" alt=""></div>
+            <div class="col-lg-4 col-md-6 py-2"><img src="Images/ver-card-2.webp" alt=""></div>
+            <div class="col-lg-4 col-md-6 py-2"><img src="Images/ver-card-3.webp" alt=""></div>
+            <div class="col-lg-4 col-md-6 py-2"><img src="Images/ver-card-4.webp" alt=""></div>
+            <div class="col-lg-4 col-md-6 py-2"><img src="Images/ver-card-5.webp" alt=""></div>
+            <div class="col-lg-4 col-md-6 py-2"><img src="Images/ver-card-6.webp" alt=""></div>
+        </div>
+    </div>
+
+    <!-- ------------- Small Cards Section --------------- -->
+
+    <div class="container-fluid">
+        <div class="row small-cards">
+            <div class="col-12 col-md-4 bg-white p-2 ms-2">
+                <div class="h5 py-3 d-flex justify-content-between">Summer Essentials <i
+                        class="fa-solid fa-circle-chevron-right text-primary h4"></i></div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <img src="Images/small-card-1.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Sunglasses</h5>
+                                <p class="card-text">Min. 50% Off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <img src="Images/small-card-2.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Men's Kurtas</h5>
+                                <p class="card-text">Min. 50% Off</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <img src="Images/small-card-3.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Men's T-shirts</h5>
+                                <p class="card-text">Min. 50% Off</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="card p-2">
+                            <img src="Images/small-card-4.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Smartwatch</h5>
+                                <p class="card-text ">Min. 70% Off</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col small-card-banner ms-3 me-2"></div>
+        </div>
+    </div>
+
+    <!-- ------------- Vertical Image Slider --------------- -->
+
+    <div class="container-fluid text-center my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel2" class="carousel carousel2 slide carousel-img" data-bs-ride="carousel">
+                <div class="carousel-inner vertical-img-slider" role="listbox">
+                    <div class="carousel-item carousel-item2 active">
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card mx-2 p-2">
+                                <img src="Images/ver-slider-1.webp" class="card-img-top h-75" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item2">
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card mx-2 p-2">
+                                <img src="Images/ver-slider-2.webp" class="card-img-top h-75" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item2">
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card mx-2 p-2">
+                                <img src="Images/ver-slider-3.webp" class="card-img-top h-75" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item2">
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card mx-2 p-2">
+                                <img src="Images/ver-slider-4.webp" class="card-img-top h-75" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item2">
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card mx-2 p-2">
+                                <img src="Images/ver-slider-5.webp" class="card-img-top h-75" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-item2">
+                        <div class="col col-md-6 col-lg-4">
+                            <div class="card mx-2 p-2">
+                                <img src="Images/ver-slider-6.webp" class="card-img-top h-75" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel2" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel2" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------ Footer ------------------ -->
+
+    <footer>
+        <div class="container-fluid footer py-4 mt-5">
+            <div class="row">
+                <div class="col-12 col-md-6 d-flex mb-4 justify-content-center">
+                    <div class="col col-sm-3">
+                        <ul>
+                            <p class="text-white-50">ABOUT</p>
+                            <li>Contact Us</li>
+                            <li>About Us</li>
+                            <li>Careers</li>
+                            <li>FlipKart Stories</li>
+                            <li>Press</li>
+                            <li>Corporate Information</li>
+                        </ul>
+                    </div>
+                    <div class="col col-sm-3">
+                        <ul>
+                            <p class="text-white-50">GROUP COMPANIES</p>
+                            <li>Myntra</li>
+                            <li>Flipkart Wholesale</li>
+                            <li>Cleartrip</li>
+                            <li>Shopsy</li>
+                        </ul>
+                    </div>
+                    <div class="col col-sm-3">
+                        <ul>
+                            <p class="text-white-50">HELP</p>
+                            <li>Payments</li>
+                            <li>Shipping</li>
+                            <li>Cancellation &</li>
+                            <li>Returns</li>
+                            <li>FAQ</li>
+                            <li>Report Infringement</li>
+                        </ul>
+                    </div>
+                    <div class="col col-sm-3">
+                        <ul>
+                            <p class="text-white-50">CONSUMER POLICY</p>
+                            <li>Cancellation &</li>
+                            <li>Returns</li>
+                            <li>Terms of Use</li>
+                            <li>Security</li>
+                            <li>Privacy</li>
+                            <li>Sitemap</li>
+                            <li>Grievance Redressal</li>
+                            <li>EPR Compliance</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 d-flex">
+                    <div class="col border-start ps-5 border-dark-subtle">
+                        <p class="text-white-50">Mail Us:</p>
+                        <p>Flipkart Internet Private Limited, <br>
+                            Buildings Alyssa, Begonia & <br>
+                            Clove Embassy Tech Village, <br>
+                            Outer Ring Road, Devarabeesanahalli Village, <br>
+                            Bengaluru, 560103, <br>
+                            Karnataka, India</p>
+                        <p class="text-white-50">Social:</p>
+                        <p class="h5">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-x-twitter ms-2"></i>
+                            <i class="fa-brands fa-youtube ms-2"></i>
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="text-white-50">Registered Office Address:</p>
+                        <p>
+                            Flipkart Internet Private Limited,<br>
+                            Buildings Alyssa, Begonia & <br>
+                            Clove Embassy Tech Village, <br>
+                            Outer Ring Road, Devarabeesanahalli Village, <br>
+                            Bengaluru, 560103, <br>
+                            Karnataka, India <br>
+                            CIN : U51109KA2012PTC066107 <br>
+                            Telephone: <span class="text-primary">044-45614700</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+
+            <!-- ------------------ Footer-Bottom ------------------ -->
+
+            <div class="row d-flex justify-content-evenly px-3">
+                <div class="col-sm-6 col-lg-auto">
+                    <p><i class="fa-solid fa-shop me-2 text-warning"></i> Become a Seller</p>
+                </div>
+                <div class="col-sm-6 col-lg-auto">
+                    <p><i class="fa-solid fa-star-of-david me-2 text-warning"></i>Advertise</p>
+                </div>
+                <div class="col-sm-6 col-lg-auto">
+                    <p><i class="fa-solid fa-gift me-2 text-warning"></i>Gift Cards</p>
+                </div>
+                <div class="col-sm-6 col-lg-auto">
+                    <p><i class="fa-regular fa-circle-question me-2 text-warning"></i>Help Center</p>
+                </div>
+                <div class="col-sm-6 col-lg-auto">
+                    <p>© 2007-2024 Flipkart.com</p>
+                </div>
+                <div class="col col-sm-6 col-lg-auto">
+                    <img src="Images/footer-cards.svg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ------------------ Script Tag Starts Here ------------------ -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
