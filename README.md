@@ -98,6 +98,9 @@ Contributions are welcome! If you find any issues or want to add new features, f
 - [Font Awesome](https://fontawesome.com/) for the icons.
 - Flipkart for the inspiration.
 
+---
 ## Contact
 
-If you have any questions or suggestions, feel free to contact me at [Sarthak Jain](mail.sarthakjain@gmail.com).
+For any inquiries or support, please contact [Sarthak Jain](mailto:mail.sarthakjain@gmail.com).
+
+Thank you for checking out Flipkart Clone! If you have any questions or suggestions, feel free to reach out.
